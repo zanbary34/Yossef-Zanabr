@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav style="margin: 2px;padding: 2px;">
+        <ul>
+            <li><a href="./HW1.html">Home Page</a></li>
+            <li><a href="./Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div style="border:2px solid black; padding: 2px; text-align: center;">
+        <h1 style="color: blue;">Home Page</h1>
+    </div>
+    <div style="text-align:right;width:90%; padding: 10px ; margin:  10px;">
+        <span style="float:left ; padding: 10px; margin:  10px;">
+            <h3>Welcome to the first HW!</h3>
+        </span>
+            <span style="padding: 10px; margin:  10px;"> <p>Today's Date: <span id="datetime"></span></p><script>var dt = new Date();
+            document.getElementById("datetime").innerHTML=dt.toLocaleDateString();</script>
+        </span>
+    </div>
+    <span>
+        <img src="../static/Homework.webp" alt="">
+    </span>
+</body> 
+</html>
