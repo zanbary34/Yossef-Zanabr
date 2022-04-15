@@ -6,31 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-image: url(../static/backround2.jpg);">
     <nav style="margin: 2px;padding: 2px;">
         <ul>
             <li><a href="./HW1.html">Home Page</a></li>
             <li><a href="./Contact.html">Contact</a></li>
         </ul>
     </nav>
-    <div style="border:2px solid black; padding: 2px; text-align: center">
-        <h1 style="color:brown;">Contact</h1>
+    <div style="text-align: center; border:2px solid black; padding: 10px; margin: 10px;">
+        <span style="float: left;border: 2px;margin-bottom: 50px; margin-left: 80px; margin-top: 10px;">
+            <img style=" height: 150px ; width: 120px;" src="../static/HW pic.png" alt="">
+        </span>
+        <span style="float: right; border: 2px;margin-bottom: 50px; margin-right: 80px;margin-top: 10px;">
+            <img style=" height: 150px ; width: 120px;" src="../static/HW pic.png" alt="">
+        </span>
+        <span style="text-align: center; border: 0px; padding: 2px; margin: 30px;"> 
+            <h1 style="color: rgb(62, 94, 183); font-size: 60px;">Contact</h1>
+        </span>
     </div>
-    <span style="border: 2px;">
-        <h3>Please leave your details and then write your message</h3S>
-    </span>
-    <form style="border: 2px;" action="" method="">
-        <label for="FirstName">First Name</label>
-        <input style="margin: 5px;" type="text" id="FirstName" name="FirstName" required><br>
-        <label for="SureName">Sure Name</label>
-        <input style="margin: 5px;" type="text" id="SureName" name="SureName" required><br>
-        <label for="Country">Country</label>
-        <input style="margin: 5px;" type="text" id="Country" name="Country" required><br> 
-        <label for="email">email</label>
-        <input style="margin: 5px;" type="text" id="email" name="email"><br>
-        <label for="massage">Please leave your massage here</label><br>
-        <input style="width: 10cm; height: 5cm; margin: 5px;" type="text" id="massage" name="massage"><br>
-        <input value="Submit" type="submit">
+    <form style=" color: rgb(12, 14, 13); border: 2px;font-weight: bolder ;font-size: 
+    larger; text-align: center;margin-left: 400px;margin-right: 400px;background-color: bisque;" action="" method="">
+        <div style="padding: 2px;">
+            <h2 style="margin: 5px;"> Leave your details</h2>
+        </div>
+            <label for="FirstName">First Name</label>
+            <input style="margin: 10px;" type="text" id="FirstName" name="FirstName" required><br>
+            <label for="SureName">Sure Name</label>
+            <input style="margin: 10px;" type="text" id="SureName" name="SureName" required><br>
+            <label for="Country">Country</label>
+            <input style="margin: 10px;" type="text" id="Country" name="Country" required><br> 
+            <label for="email">email</label>
+            <input style="margin: 10px;" type="email" id="email" name="email"><br>
+            <label for="PhoneNum">Phone Number</label>
+            <input style="margin: 10px;" type="PhoneNum" id="PhoneNum" name="PhoneNum"><br>
+            <label style="font-size: larger" for="anonymous">Anonymous message?</label>
+            <input style="margin: 10px;" type="checkbox" id="anonymous" name="anonymous"><br>
+            <h2>Write your massage</h2>
+            <label for="massage"></label>
+            <input style="width: 10cm; height: 5cm; margin: 5px;" type="text" id="massage" name="massage"><br>
+            <input style="background-color: black; color: azure; margin: 5px;" value="Submit" type="submit">
     </form>
 </body>
 </html>
