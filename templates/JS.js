@@ -14,26 +14,22 @@ for (var i = 0; i < elements.length; i++) {
 }
 function massage2(){
     this.animate([
-    // keyframes
     { transform: 'rotate(180deg)' },
     { transform: 'rotate(360deg)' },
  
   ], {
-    // timing options
     duration: 3000,
     iterations: 1
 })
 }
 
 var txt = ["Handmade cookies,","full of love,","with  a taste that stays for a long time."];
-var executed = false;
 var speed = 100;  
 var j=0 ;
 var i=0 ;
 typeWriter() 
 function typeWriter() {
    if (j< txt.length){
-        if (i<100){
             document.getElementById("stext").innerHTML += txt[j].charAt(i);
             if (txt[j].charAt(i) == ","){
                 j++;
@@ -43,6 +39,6 @@ function typeWriter() {
             i++;
             setTimeout(typeWriter, speed);   
         }
-    }
 }
+
 
