@@ -1,13 +1,15 @@
+//Display the current page
 const activePage = window.location.pathname;
 const navLinks = document.querySelectorAll('nav a').forEach(link => {    
     if(link.href.includes(`${activePage}`)){
       link.classList.add('active');
     }
   });
-
+//Massage after clicking submit
 function thanks(){
     alert('Thanks!')
 }
+//Rotate img by click
 const elements  = document.getElementsByTagName("img");
 for (var i = 0; i < elements.length; i++) {
     elements[i].addEventListener('click', massage2);
@@ -22,7 +24,7 @@ function massage2(){
     iterations: 1
 })
 }
-
+//Display letters one by one.
 var txt = ["Handmade cookies,","full of love,","with  a taste that stays for a long time."];
 var speed = 100;  
 var j=0 ;
