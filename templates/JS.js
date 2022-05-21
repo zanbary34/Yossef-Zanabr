@@ -27,7 +27,7 @@ function massage2(){
 
 var txt = ["Handmade cookies,","full of love,","with  a taste that stays for a long time."];
 var executed = false;
-var speed = 50;  
+var speed = 100;  
 var j=0 ;
 var i=0 ;
 typeWriter() 
