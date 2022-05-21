@@ -5,32 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./Home.css">
+    <script defer src="../templates/JS.js"></script>
 </head>
-<body style="background-image: url(../static/backround2.jpg);">
-    <nav style="border: 0ch; margin: 2px;padding: 2px; ">
-            <ul>
-                <li><a href="./HW1.html">Home Page</a></li>
-                <li><a href="./Contact.html">Contact</a></li>
-            </ul>
-    </nav>
-    <div style="text-align: center; border:2px solid black; padding: 10px; margin: 10px;">
-        <span style="float: left;border: 2px; margin-left: 80px; margin-top: 50px;">
-            <img style=" height: 150px ; width: 120px;" src="../static/HW pic.png" alt="">
-        </span>
-        <span style="float: right; border: 2px; margin-right: 80px;margin-top: 50px;">
-            <img style=" height: 150px ; width: 120px;" src="../static/HW pic.png" alt="">
-        </span>
-        <span style="text-align: center; border: 0px; padding: 2px; margin: 50px;"> 
-            <h1 style="color: blue; font-size: 100px;margin: 40px;">Home Page</h1>
+<body>
+    <header id="container">
+        <span >
+            <img class="rotate" id = "imgh1" src="../static/logo.png" alt="">
         </span> 
-    </div>
-    <div style="text-align:right;width:90%; border: 0ch; padding: 10px ; margin:  10px;">
-        <span style="float: left; width:80% ; border: 0ch; padding: 10px;margin: auto;">
-            <h3 style="color:aquamarine; font-size: 50px;font-weight: bold;">Welcome To The HW Site!</h3>
-        </span >
-        <span style="padding: 10px; margin:  10px;"> <p>Today's Date: <span id="datetime"></span></p><script>var dt = new Date();
-            document.getElementById("datetime").innerHTML=dt.toLocaleDateString();</script>
+        <span id="spanh">
+            <img id = "imgh2" src="../static/logo.png" alt="">
+        </span> 
+    </header>
+    <nav class="topview">
+        <a class="nav1" href="./HW1.html">Home Page</a>
+        <a class="nav1" href="./Contact.html">Contact</a>
+    </nav>
+    <div class="box" >
+        <span >
+            <img id="img1"  src="../static/Pic1.png" alt="">
         </span>
+        <span > 
+            <h1 id="htext">Home Page</h1>
+        </span> 
+        <span>
+            <img id="img2"  src="../static/Pic2.png" alt="">
+        </span>
+    </div>
+    <div >
+        <span>
+            <h3 id="stext"></h3>
+        </span >
     </div>
 </body> 
 </html>
